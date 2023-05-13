@@ -1,11 +1,11 @@
 
-<h1>Les défis</h1>
-
-<div class="card-container">
+<div class="card-container d-flex flex-wrap justify-content-center">
   <% @challenges.each do |challenge| %>
     <div class="card">
       <% if challenge.image_url.present? %>
-        <img src="<%= challenge.image_url %>" class="card-img-top" alt="Image du défi">
+        <a href="<%= challenge_path(challenge) %>">
+          <img src="<%= challenge.image_url %>" class="card-img-top" alt="Image du défi">
+        </a>
       <% end %>
       <div class="card-body">
         <h5 class="card-title"><%= challenge.name %></h5>
@@ -13,3 +13,4 @@
     </div>
   <% end %>
 </div>
+
