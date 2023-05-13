@@ -1,12 +1,15 @@
 <!-- app/views/challenges/index.html.erb -->
+<h1>Les défis</h1>
 
-<div class="container">
-  <div class="section">
-    <h2 class="text-center">Les défis sportifs</h2>
-    <div class="cards">
-      <% @challenges.each do |challenge| %>
-        <%= render "challenge_card", challenge: challenge %>
+<div class="card-container">
+  <% @challenges.each do |challenge| %>
+    <div class="card">
+      <% if challenge.image_url.present? %>
+        <img src="<%= challenge.image_url %>" class="card-img-top" alt="Image du défi">
       <% end %>
+      <div class="card-body">
+        <h5 class="card-title"><%= challenge.name %></h5>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>
