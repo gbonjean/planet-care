@@ -6,7 +6,6 @@ Rails.application.routes.draw do
 
   resources :challenges, only: [:index, :show] do
     resources :contents, only: [:show]
+    get 'support', to: 'challenges#support'
   end
-
-  get 'support', to: 'challenges#support'
 end
