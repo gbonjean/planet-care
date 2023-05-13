@@ -56,7 +56,7 @@ challenge6 = Challenge.create(
   image_url:"https://images.unsplash.com/photo-1506976697767-6c29c943ecbf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGFyYXBlbnRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
 )
 
-Content.create(
+content1 = Content.create(
   title:"Les baleines à bosse (Megaptera novaeangliae)",
   description:
   "La baleine à bosse est un cétacé à la taille imposante, mesurant entre 15 et 18 mètres et pesant jusqu'à 40 tonnes. Elle se distingue par sa tête massive contenant des fanons, qui filtrent le plancton dont elle se nourrit.
@@ -65,7 +65,7 @@ Content.create(
   Identification : Chaque baleine à bosse possède une nageoire caudale unique, qui permet de l'identifier individuellement. Les motifs sur cette nageoire, semblables à une empreinte digitale, sont utilisés pour la reconnaissance des individus.
   Conservation : Les baleines à bosse étaient autrefois chassées intensivement, mais grâce à des mesures de conservation, leur population s'est rétablie dans de nombreuses régions du monde. Elles sont maintenant protégées par des lois internationales et sont considérées comme une espèce en voie de rétablissement."
 )
-Content.create(
+content2 = Content.create(
   title: "Le 6e continent de plastique",
   description:"Le 6e continent de plastique est une zone de l'océan Pacifique Nord où les déchets plastiques s'accumulent. Il est estimé que cette zone contient plus de 1,8 billion de morceaux de plastique, pesant environ 80 000 tonnes. Les déchets plastiques sont transportés par les courants océaniques et s'accumulent dans cette zone, qui est située entre la Californie et Hawaï. "
 )
