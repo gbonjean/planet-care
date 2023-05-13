@@ -9,4 +9,12 @@ class ChallengesController < ApplicationController
   def show
     @challenge = Challenge.find(params[:id])
   end
+
+  def content1
+    
+  end
+
+  def content2
+
+  end
 end

@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   root to: "challenges#home"
 
   resources :challenges, only: [:index, :show] do
-    resources :contents, only: [:show]
     get 'support', to: 'challenges#support'
   end
+
+  get "content1", to: 'challenges#content1'
+  get "content2", to: 'challenges#content2'
 end
