@@ -1,8 +1,19 @@
 <div id="navbar-container">
-  <%= image_tag 'picto-1-parcours-hover.png' %>
-  <%= image_tag 'picto-2-peda.png' %>
-  <%= image_tag 'picto-3-soutien.png' %>
-  <%= image_tag 'picto-4-user.png' %>
+    <%= link_to challenges_path do %>
+      <%= image_tag "picto-1-parcours-hover.png", alt: "Picto" %>
+    <% end %>
+
+    <%= link_to challenge_path(1) do %>
+      <%= image_tag "picto-2-peda.png", alt: "Picto" %>
+    <% end %>
+
+    <%= link_to challenge_support_path(1) do %>
+      <%= image_tag "picto-3-soutien.png", alt: "Picto" %>
+    <% end %>
+
+    <%= link_to challenges_path do %>
+      <%= image_tag "picto-4-user.png", alt: "Picto" %>
+    <% end %>
 
 
 </div>
