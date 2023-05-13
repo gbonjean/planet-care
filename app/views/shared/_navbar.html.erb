@@ -1,0 +1,16 @@
+<div id="navbar-container">
+
+<%= link_to challenges_path do %>
+  <% if current_page?(challenges_path) %>
+      <li class="list-navbar active">
+
+          <a href="gyms_path"></a>
+      </li>
+  <% else %>
+      <li class="list-navbar">
+
+          <a href="gyms_path"></a>
+      </li>
+  <% end %>
+<% end %>
+
